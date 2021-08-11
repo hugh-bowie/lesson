@@ -15,6 +15,7 @@ const Detail = ({ setCurrentBook, currentBook }) => {
 
   useEffect(() => {
     setCurrentBook(books.find(({ _id }) => _id === bookId));
+    console.log(currentBook);
 
     return () => {
       setCurrentBook('');
